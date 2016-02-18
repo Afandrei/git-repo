@@ -1,0 +1,157 @@
+
+
+
+
+
+SmartGit 7.1 preview 6 (2015-11-06)
+===================================
+New Features, Improvements
+--------------------------
+- Support for high resolution graphics (HiRes, HiDPI)
+- smartgit.vmoptions (Linux, Mac): support for "path=" property
+
+Fixed Bugs
+----------
+- Refresh: internal error if .git link file contains CRLF
+- View|Show Staged Files: if unselected, certain conflict files
+  were not shown
+
+
+SmartGit 7.1 preview 5 (2015-10-30)
+===================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Branches:
+    - tracked remote features should show up in Features category
+      (not in remote)
+    - denote tracked remote branches (by gray name)
+  - bugtraq: support for multiple "projects" per issue tracker (entry)
+  - Log, Files: when invoking Show Changes on an added/removed file
+    pair, compare them against each other
+  - Refresh: smudge/clean filters (from .gitattributes) should be
+    honored (necessary for Git LFS)
+- Distributes Reviews: pull requests should show "Last Updated By"
+  information (in tooltip)
+
+Fixed Bugs
+----------
+- BitBucket: refresh should be tolerant in case parent repository can't
+  be accessed
+- Git:
+  - Git Flow: for Finish Feature, remote branch isn't removed even when
+    selected
+  - Worktrees: repository might not work anymore after upgrading to
+    Git 2.6
+  - Outgoing View, Stage Hunks: "Invalid boolean value:
+    core.autocrlf=input" error
+- Restart: possible internal error
+
+
+SmartGit 7.1 preview 4 (2015-10-08)
+===================================
+New Features, Improvements
+--------------------------
+- BitBucket Server:
+  - BitBucket Server 4.0 support
+  - the SSL client certificate is hidden by default
+- Git:
+  - Fetch More dialog: added speed-search
+  - Log:
+    - Branches: new "Commits" category for revealed/anchor commits
+    - Push: allow to push with selection in Graph view (if the selected commit
+      has exactly one pushable ref)
+- GitHub:
+  - improved username/password selection for relative submodules
+  - request API token using OAuth without requiring password
+  - option to use OAuth token directly without creating additional credentials
+  - SSH option also present in non-commercial edition
+- GUI: table/tree rows on Windows/Linux were too high
+
+Fixed Bugs
+----------
+- Git:
+  - Branches: Stashes only show up if .git/refs/stash file is existing
+  - Log, Branches: toggling stash on already "lost" head did not show up the
+    stash until refreshed
+- GUI: dialog "SmartGit requires a restart" too narrow after sleep
+
+
+SmartGit 7.1 preview 3 (2015-09-30)
+===================================
+New Features, Improvements
+--------------------------
+- Bitbucket: OAuth authentication
+- Git:
+  - Background processes don't show process-hanging dialog, but silently kill
+  - Commit dialog, JIRA integration: show warning in case of slightly invalid
+    bugtraq URL
+- KDE:
+  - /usr/bin/konsole is used as terminal for default external tool
+  - if oxygen-gtk theme is detected, the launcher script aborts with an error
+    message
+
+Fixed Bugs
+----------
+- Git:
+  - Clone/Init (OS X): warning "template not found in
+    /usr/local/git/share/git-core/template" was shown because GIT_TEMPLATE_DIR
+    was not set
+  - Refresh: internal error opening bare repository
+  - Stage Lines: CRLF was not preserved in repository (special core.autocrlf
+    handling)
+- Changes preview: if single modified file is committed (or discarded), the
+  next modified file was selected but it was not scrolled to 1st change
+- Repositories: the tooltip of a cloning repository showed "Repository is
+  missing"
+
+
+SmartGit 7.1 preview 2 (2015-09-18)
+===================================
+New Features, Improvements
+--------------------------
+- GitLab: show namespace instead of owner
+
+Fixed Bugs
+----------
+- Git
+  - External tools: some Git specific tools were not added on fresh install
+  - hanging background processes if no master password had been entered
+- BitBucket: enhanced authentication broken
+- GitLab: only showed 20 repositories
+- updated SWT to hopefully fixing
+  https://bugs.eclipse.org/bugs/show_bug.cgi?id=452141
+- Windows: incomplete JRE
+
+
+SmartGit 7.1 preview 1 (2015-09-16)
+===================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Commit: JIRA integration
+  - Windows: reliable way to kill Git process including sub-processes
+  - Worktree support for Git 2.5
+- added Repository | Search Repositories to search repositories checked out
+  outside SmartGit
+- startup: check for new version to prepare rolling release
+
+Fixed Bugs
+----------
+- Git:
+  - various commands: possible problems with refs/remotes/git-svn and similar
+    branches
+- Hg: strange versions like 3.0+3 were not detected as too old
+- GUI:
+  - Compare connector: scrolled 2 positions on Windows 10
+  - a notification could cause the layout to "jump"
+- Setup wizard: did not check correctly hg version the 2nd time (after having
+  replaced the hg binary)
+
+Other Changes
+-------------
+- Windows: updated JRE to 8u60 to correctly detect Windows 10
+
+print «what is this?!»
+
+print «where’s the last file?»
