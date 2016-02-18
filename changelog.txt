@@ -1,4 +1,4 @@
-Other Changes
+Other Changes - i have great changes in my life now!
 -------------
 - at least Git 1.8.2 is required
 
