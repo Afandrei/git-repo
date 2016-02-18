@@ -1,6 +1,6 @@
 
 
-
+some updates in this text file
 
 
 SmartGit 7.1 preview 6 (2015-11-06)
