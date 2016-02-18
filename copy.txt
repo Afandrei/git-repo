@@ -2,7 +2,7 @@
 
 some updates in this text file
 
-
+and one more
 SmartGit 7.1 preview 6 (2015-11-06)
 ===================================
 New Features, Improvements
